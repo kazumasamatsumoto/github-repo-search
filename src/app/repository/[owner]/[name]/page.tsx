@@ -9,6 +9,7 @@ import {
 } from "@/app/components/ui/card";
 import { Star, GitFork, Eye, CircleDot, AlertCircle } from "lucide-react";
 import { BackButton } from "@/app/components/back-button";
+import { Orbs } from "@/app/components/orbs";
 
 interface RepositoryPageProps {
   params: Promise<{
@@ -33,6 +34,7 @@ export default async function RepositoryPage({ params }: RepositoryPageProps) {
 
   return (
     <main className="container mx-auto px-4 py-8">
+      <Orbs />
       <BackButton />
       <Card className="mt-8">
         <CardHeader>
